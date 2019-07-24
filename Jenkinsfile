@@ -5,8 +5,10 @@ pipeline {
             steps {
                 sh 'echo "Hello World!"'
                 sh '''
-                    echo pwd
-                    echo date
+                    whoami
+                    pwd
+                    date
+                    uname -a
                 '''
             }
         }
